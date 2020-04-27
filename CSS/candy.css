@@ -1,7 +1,11 @@
 body{
+    filter:(2px);
     padding: 0px;
     border: 0px;
     margin: 0px;
+    background-image: url('img/bg.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 }
 
 #headImg    {
@@ -22,4 +26,57 @@ body{
     color:white;
 
     font-family:"Times New Roman", Times, serif;
+}
+
+#leftList   {
+    width: 20%;
+    height: 200px;
+    margin:2% 5% 5% 5%;
+    border: 3px solid blue;
+    background-color: white;
+    display: inline-block;
+}
+
+#leftList_h1    {
+    text-align: center;
+    font-size: 26px;
+    color:white;
+    background-color: blue;
+    padding:0px;
+    margin:0;
+}
+
+ul  {
+    margin :0;
+    list-style:none;
+    padding:1px;
+}
+
+li p {
+    margin:0;
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li p:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+
+#rightPage  {
+    vertical-align:top;
+    display: inline-block;
+    width: 50%;
+    height: 1000px;
+    margin:2% 10% 5% 5%;
+    border: 3px solid blue;
+    background-color: white;
+}
+
+#rightPage h1   {
+    text-align: center;
 }
