@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/candy.css">
+        <title>Leclerc - 在吗？你米缸空了</title>
+
+        <script>
+            function ramdomFabu() {
+                var n = Math.round(Math.random()*2);
+                switch(n)   {
+                    case 0: {
+                        return "河港区外围治安队公开悬赏处";
+                        break;
+                    }
+                    case 1: {
+                        return "河港区治安队公开悬赏处";
+                        break;
+                    }
+                    case 2: {
+                        return "圣海伦娜大学";
+                        break;
+                    }
+                }
+            }
+
+            function ramdomMissionLocate()    {
+                var n = Math.round(Math.random()*2);
+                switch(n)   {
+                    case 0: {
+                        return "酒吧";
+                        break;
+                    }
+                    case 1: {
+                        return "旅馆";
+                        break;
+                    }
+                    case 2: {
+                        return "学校";
+                        break;
+                    }
+                }
+            }
+
+            function ramdomMissionAction()    {
+                var n = Math.round(Math.random()*2);
+                switch(n)   {
+                    case 0: {
+                        return "有居民失踪";
+                        break;
+                    }
+                    case 1: {
+                        return "发生了物品被盗窃";
+                        break;
+                    }
+                    case 2: {
+                        return "有儿童走失";
+                        break;
+                    }
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <div id="headImg">
+            <img src = "CSS/img/Lec_header.png"/>
+        </div>
+        <div id="banner">
+            <h1 id="banner">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp雾城 - 海岸平远线IC资料库</h1>
+        </div>
+
+        <div id="leftList">
+            <p id="leftList_h1">档案清单</p>
+            <ul>
+                <li><a href="quickStart.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp快速开始</a></li>
+                <li><a href="quickStart.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp生活指南</a></li>
+                <li><a href="quickStart.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp物品栏</a></li>
+            </ul>
+        </div>
+        <div id="rightPage">
+            <h1>Auto mission·自动每日任务生成</h1>
+            <hr />
+            <p>“轻骑兵帮派是最早将领航人作为一门生意去经营的——先生，我的意思是，您不会认为我们都是义务工作者吧？”</p>
+            <p>在伊甸城，每时每刻都有人在信天翁酒吧张贴任务报告，希望游荡至此的领航人或者普通人们能做些什么。任务需要消耗一个【信用徽章】道具方可接取。接取任务、执行任务和提交任务都需要描写，在接取任务时，通过截取任务报告发送给管理员以得到确认。而视描写程度获得相应的奖励。</p>
+            <p>您可以随时点击下方的“下一份”按钮来获得新的任务报告。</p>
+            <p></p>
+            <hr/>
+            <button onclick="getElementById('fabu').innerHTML=ramdomFabu();getElementById('loc').innerHTML=ramdomMissionLocate();getElementById('act').innerHTML=ramdomMissionAction();">读取下一份</button>
+            <p></p>
+            <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp发布人：</span>
+            <span id = "fabu">？？？</span>
+            <p></p>
+            <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp任务简报：在本地区的某个</span>
+            <span id = "loc">？？？</span>
+            <span>中，收到了</span>
+            <span id = "act">？？？</span>
+            <span>的报告，希望您能立即前去调查。</span>
+        </div>
+
+    </body>
+</html>
